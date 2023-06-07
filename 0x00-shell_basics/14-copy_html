@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u *.htm ..
+rsync -av --update --exclude ='*' --include='*.html' ./ ../
